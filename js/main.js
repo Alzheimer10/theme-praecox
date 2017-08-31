@@ -151,9 +151,9 @@ counter = function() {
 // Scrollreveal
 scrollreveal = function(){
 	window.sr = ScrollReveal({ reset: false,mobile: false,duration: 1000});
-	sr.reveal('.reveal-efect,.animate-box',{duration: 1000,origin: 'botton'});
-	sr.reveal('.reveal-efect-left',{ duration: 1000,origin: 'left' });
-	sr.reveal('.reveal-efect-right',{ duration: 1000 ,origin: 'right'});
+	sr.reveal('.reveal-efect,.animate-box',{duration: 1000,origin: 'top'});
+	//sr.reveal('.reveal-efect-left',{ duration: 1000,origin: 'left' });
+	//sr.reveal('.reveal-efect-right',{ duration: 1000 ,origin: 'right'});
 },
 
 counterWayPoint = function() {
