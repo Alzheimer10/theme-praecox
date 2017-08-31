@@ -1,0 +1,53 @@
+//_______________________
+// gototop
+//_______________________
+.ac-gototop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.5s);
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	&.gototop-circle a{
+		@include border-radius(50px);
+	}
+	&.gototop-semicircle a{
+		@include border-radius(10px);
+	}
+	&.gototop-square a{
+		@include border-radius(0px);
+	}
+	a {
+		width: 50px;
+		height: 50px;
+		display: table;
+		background-color: $bg-gototop; 
+		color: $color-gototop;
+		text-align: center;
+		@include transition(.5s);
+		@include box-shadow(0px 2px 4px 0px rgba(0,0,0,0.75));
+		@include border-radius(15px);
+		i {
+			height: 50px;
+			display: table-cell;
+			vertical-align: middle;
+			@include transition(.5s);
+		}
+		&:hover, &:active, &:focus {
+			cursor: pointer;
+			text-decoration: none;
+			outline: none;
+			color: $color-gototop-hover;
+			background-color: $bg-gototop-hover;
+
+			i{
+				@include transform(scale(1.2));
+			}
+		}
+	}	
+}

@@ -1,0 +1,67 @@
+.box-item{
+	text-align: center;
+	margin-bottom: 45px;
+}
+.wrap-icon {
+    padding-bottom: 25px;
+    display: block;
+}
+.hexagon {
+    position: relative;
+    width: 120px;
+    height: 69.28px;
+    background-color: #ffffff;
+    margin: auto;
+	margin-bottom: 24px;
+	margin-top: 24px;
+    box-shadow: 0 0 10px $color-green;
+	
+	&:before {
+	    top: -42.4264px;
+	}
+	&:before, &:after {
+	    content: "";
+	    position: absolute;
+	    z-index: 1;
+	    width: 84.85px;
+	    height: 84.85px;
+	    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+	    -ms-transform: scaleY(0.5774) rotate(-45deg);
+	    transform: scaleY(0.5774) rotate(-45deg);
+	    background-color: inherit;
+	    left: 17.5736px;
+	    box-shadow: 0 0 10px $color-green;
+	}
+	& .hexagon-inner {
+	    display: block;
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    z-index: 999;
+	}
+	& .hexagon-inner .hexagon-inner-content {
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	    text-align: center;
+	    transform: translateY(-50%);
+	    & i{
+	    	color: $color-green;
+	    }
+	}
+	&:after {
+	    bottom: -42.4264px;
+	}
+	& span {
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 120px;
+	    height: 69.2820px;
+	    z-index: 2;
+	    background: #fff;
+	}
+}

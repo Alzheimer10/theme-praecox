@@ -1,0 +1,136 @@
+// Buttons
+.btn {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	font-family: $font-primary;
+	font-size: 16px;
+	font-weight: 400;
+	@include border-radius(4px);
+	@include transition(.5s);
+	padding: 8px 30px;
+	&.btn-md {
+		padding: 8px 20px!important;
+	}
+	&.btn-lg {
+		padding: 18px 36px!important;
+	}
+	&:hover, &:active, &:focus {
+		box-shadow: none!important;
+		outline: none!important;
+	}
+}
+
+.btn-primary {
+	background: $color-primary;
+	color: $color-white;
+	@include border(2px solid $color-primary!important);
+	&:hover, &:focus, &:active {
+		background: lighten($color-primary, 5%)!important;
+		border-color: lighten($color-primary, 5%)!important;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: $color-primary;
+		border: 2px solid $color-primary;
+		&:hover, &:focus, &:active {
+			background: $color-primary;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-success {
+	background: $brand-success;
+	color: $color-white;
+	@include border(2px solid $brand-success);;
+	&:hover, &:focus, &:active {
+		background: darken($brand-success, 5%)!important;
+		border-color: darken($brand-success, 5%)!important;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: $brand-success;
+		@include border(2px solid $brand-success);;
+		&:hover, &:focus, &:active {
+			background: $brand-success;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-info {
+	background: $brand-info;
+	color: $color-white;
+	@include border(2px solid $brand-info);;
+	&:hover, &:focus, &:active {
+		background: darken($brand-info, 5%)!important;
+		border-color: darken($brand-info, 5%)!important;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: $brand-info;
+		@include border(2px solid $brand-info);;
+		&:hover, &:focus, &:active {
+			background: $brand-info;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-warning {
+	background: $brand-warning;
+	color: $color-white;
+	@include border(2px solid $brand-warning);;
+	&:hover, &:focus, &:active {
+		background: darken($brand-warning, 5%)!important;
+		border-color: darken($brand-warning, 5%)!important;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: $brand-warning;
+		@include border(2px solid $brand-warning);;
+		&:hover, &:focus, &:active {
+			background: $brand-warning;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-danger {
+	background: $brand-danger;
+	color: $color-white;
+	@include border(2px solid $brand-danger);
+	&:hover, &:focus, &:active {
+		background: darken($brand-danger, 5%)!important;
+		border-color: darken($brand-danger, 5%)!important;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: $brand-danger;
+		@include border(2px solid $brand-danger);
+		&:hover, &:focus, &:active {
+			background: $brand-danger;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-white {
+	background: $brand-danger;
+	color: $color-white;
+	@include border(2px solid $brand-danger);
+	&:hover, &:focus, &:active {
+		color: $color-black;
+		background: darken($color-white, 5%)!important;
+		border-color: darken($color-white, 5%)!important;
+	}
+	&.btn-outline {
+		color: $color-white;
+		@include border(2px solid $color-white);
+		&:hover, &:focus, &:active {
+			background: $color-white;
+			color: $color-black;
+			@include border(2px solid $color-white);
+		}
+	}
+}

@@ -1,0 +1,91 @@
+$font-primary: 'Nova Flat', cursive;
+
+// Overrides
+$grid-gutter-width: 40px !default; 
+$border-radius-base:  4px !default;
+$padding-base-vertical: 14px !default;
+
+$color-green: #1a9079;
+$color-primary: $color-green !default;
+$color-primary-hover:  $color-green !default;
+$color-secondary: #118DF0 !default; 
+
+$color-white: #fff;
+$color-black: #000;
+$color-darker: #444;
+$color-gray: #ccc;
+$color-lighter: #e9e9e9;
+$color-body-color: #818892;
+$color-selection-color: #f9f6f0;
+$color-overlay-color: #3b3d40;
+$color-bg-color: $color-white;
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$input-border-focus:  $color-primary !default;
+$form-group-margin-bottom:       30px !default;
+
+//SVG
+$svg-color-primary: $color-primary;
+
+//link_effects
+$link-color:	$color-gray;
+$link-hover-color:	 $color-black;
+
+//loader
+$bg-loader: $color-white;
+$color-loader: $color-primary;
+
+//selection
+$bg-selection: $color-primary;
+$color-selection: $color-white;
+
+//highlight
+$bg-highlight: $color-primary;
+$color-highlight: $color-white;
+
+//scrollbar
+$bg-scrollbar: $color-primary;
+
+//gototop
+$color-gototop: $color-white;
+$color-gototop-hover: $color-white;
+$bg-gototop: rgba(0, 0, 0, 0.5);
+$bg-gototop-hover: $color-primary;
+
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

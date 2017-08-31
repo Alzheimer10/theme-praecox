@@ -1,0 +1,17 @@
+.parallax-window{
+  min-height: 200px;
+  background: transparent;
+  background-image: url(../img/opl-parallax-universe-2.jpg);
+  background-size: cover;
+  position: relative;
+  display: table;
+  width: 100%;
+  & .parallax-container{
+  	display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+  	& h1{
+    		color: white;
+  	}
+  }
+}

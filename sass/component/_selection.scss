@@ -1,0 +1,13 @@
+::-webkit-selection {
+  color: $color-selection;
+  background: $bg-selection;
+}
+
+::-moz-selection {
+  color: $color-selection;
+  background: $bg-selection;
+}
+::selection {
+  color: $color-selection;
+  background: $bg-selection;
+}

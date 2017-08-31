@@ -1,0 +1,25 @@
+svg * {
+	fill: none;
+	stroke: currentColor;
+}
+/* Custom */
+.svg-animation{
+	float: left;
+	width: 100%; height: 320px;
+	stroke: #f9f9f9;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+.svg-animation-2{
+	float: left;
+	width: 100%; height: 320px;
+	stroke: #f9f9f9;
+	stroke-width: 1;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+/* svg-color */
+.svg-color-primary { color: $color-primary }
